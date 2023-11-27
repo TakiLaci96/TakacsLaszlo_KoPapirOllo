@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/topLinear">
+        
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="165dp"
+            android:src="@drawable/rock"
+            android:id="@+id/imageView1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerTextView"
+            android:textSize="35sp"
+            android:text="A Te választásod"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="165dp"
+            android:src="@drawable/rock"
+            android:id="@+id/imageView2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/botTextView"
+            android:textSize="35sp"
+            android:text="A gép választása"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eredmény: "
+            android:textSize="25dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ember: "
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 "
+            android:textSize="25dp"
+            android:id="@+id/playerResult">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Computer: "
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:id="@+id/computerResult">
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/buttonLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text="Kő"
+            android:textColor="@color/black"
+            android:id="@+id/rock"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@color/grey"
+            android:text="Papír"
+            android:textColor="@color/black"
+            android:id="@+id/paper"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text="Olló"
+            android:textColor="@color/black"
+            android:id="@+id/scissors"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
